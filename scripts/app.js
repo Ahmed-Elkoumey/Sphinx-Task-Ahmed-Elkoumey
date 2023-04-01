@@ -57,9 +57,11 @@ $(function () {
 });
 
 
+// Resize webPage based on the scale of the brwoser
+
 // /click on the button
 $(".all").click(function () {
-  //remove old active class from  button
+  //check on the target button is not more than one
   let oldactive = $("#main .active");
 
   if (oldactive.length > 0) {
@@ -69,7 +71,6 @@ $(".all").click(function () {
   $(this).addClass("active");
 });
 
-// Resize webPage based on the scale of the brwoser
 
 
 
@@ -98,7 +99,7 @@ function disablebtns() {
   $(".reset-btn").addClass("removepointer");
   $(".answer-box").hide();
 }
-//the two hidden pages
+//the two hidden popup
 
 $(".btn1").click(function () {
   $(".msg2").css({ display: "none" });
@@ -131,6 +132,8 @@ $(".btn4").click(function () {
   activebtns();
 });
 
+
+// the buttons functionality
 $(".pointer").click(function () {
   let oldactive = $("#main .active");
   if (oldactive.length > 0) {
@@ -214,8 +217,7 @@ $(".reset-btn").click(function () {
   if (oldactive.length > 0) {
     $("#main .active").removeClass("active");
   }
-  //  $(this).removeClass("removepointer")
-  //  $(this).addClass("active");
+
 });
 //see answers
 
