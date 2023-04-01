@@ -209,7 +209,8 @@ $(".reset-btn").click(function () {
   $("#btn5").removeClass("removepointer");
   $("#btn8").removeClass("removepointer");
   $("#btn9").removeClass("removepointer");
-
+  
+  $("#check-ans-btn").removeClass("removepointer");
   $("#check-ans-btn").removeClass("disabled");
   $("#check-ans-btn").prop("disabled", false);
 
