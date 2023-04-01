@@ -15,7 +15,6 @@ $(function () {
   getPageSize();
   scalePages($page, pageWidth, pageHeight);
 
-  //using underscore to delay resize method till finished resizing window
   $(window).resize(
     _.debounce(function () {
       getPageSize();
