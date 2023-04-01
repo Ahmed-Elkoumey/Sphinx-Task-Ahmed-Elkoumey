@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sphinx-Task-Ahmed-Elkoumey</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <style>
+      #container {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        right: 20px;
+        bottom: 20px;
+        font-family: Arial, sans-serif;
+        color: #fff;
+      }
+      .page_content {
+        width: 800px;
+        height: 600px;
+        -ms-transform-origin: top left;
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+        -webkit-transition: all 500ms ease-in-out !important;
+        transition: all 500ms ease-in-out !important;
+        position: absolute;
+      }
+    </style>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+  </head>
+
+  <body>
+    <div id="container">
+      <!--the audio files-->
+      <audio
+        class="audio_wrong"
+        src="assets/audios/Wrong-answer-sound-effect.mp3"
+        controls
+        style="visibility: hidden"
+      ></audio>
+      <audio
+        src="assets/audios/soundsilk-Correct-Answer-Soundeffect.mp3"
+        class="audio_right"
+        controls
+        style="visibility: hidden"
+      ></audio>
+      <audio
+        src="assets/audios/V86RHZN-children-shout-yes.mp3"
+        class="audio_done"
+        controls
+        style="visibility: hidden"
+      ></audio>
+
+      <div class="page_content">
+        <!-- the loader part -->
+        <div class="loader_bg">
+          <img src="assets/images/Preloader_2.gif" alt="preloader" class="preloader">
+        </div>
+
+        <!--the two hidden msgs-->
+
+        <div class="msg1 gmsg" style="display: none">
+          <div class="container">
+            <img class="dummy-img" src="assets/images/no-image.jpg" />
+            <img src="assets/images/close_icon.png" class="btn3" />
+          </div>
+        </div>
+
+        <div class="msg2 gmsg" style="display: none">
+          <h3>Help Content goes Here !</h3>
+          <img src="assets/images/close_icon.png" class="btn4" />
+        </div>
+
+        <!--the top -->
+
+        <div class="while_bg">
+          <div id="d1">
+            <p class="p1" style="font-family: sans-serif">
+              What's in the basket? Choose and write.
+            </p>
+          </div>
+
+          <div id="d2">
+            <img  src="assets/images/resourse_icon.png" class="btn1" />
+            <img  src="assets/images/help_icon.png" class="btn2" />
+          </div>
+        </div>
+
+        <!--background-->
+
+        <div id="show-hide">
+          <div id="intheback">
+            <div class="while_bg">
+              <div id="blue-bg"></div>
+              <div id="lightblue-bg">
+                <img
+                  src="assets/images/replay_icon.png"
+                  class="reset-btn"
+                />
+                <img
+                  
+                  src="assets/images/showAns_icon.png"
+                  id="check-ans-btn"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--core-->
+
+        <div id="main">
+          <img class="bgimg" src="assets/images/p15e11.png" />
+
+          <div id="all-btns">
+            <div class="first-row">
+              <button class="all" id="btn5">scissors</button>
+              <button class="all" id="btn6">eraser</button>
+              <button class="all" id="btn7">ruler</button>
+              <button class="all" id="btn8">bag</button>
+            </div>
+
+            <br />
+
+            <div class="second-row">
+              <button class="all" id="btn9">pencil case</button>
+              <button class="all" id="btn10">pencil</button>
+              <button class="all" id="btn11">book</button>
+              <button class="all" id="btn12">pen</button>
+            </div>
+          </div>
+        </div>
+
+        <!--tha answers spots-->
+        <div id="sound" class="empty1 pointer answer-box rest-class"></div>
+        <div id="sound" class="empty2 pointer answer-box rest-class"></div>
+        <div id="sound" class="empty3 pointer answer-box rest-class"></div>
+        <div id="sound" class="empty4 pointer answer-box rest-class"></div>
+        <div id="sound" class="empty5 pointer answer-box rest-class"></div>
+      </div>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+
+    
+    <script src="scripts/app.js"></script>
+
+    <!--the reload-->
+    <script>
+    $(window).on('load',()=>$(".loader_bg").fadeToggle());
+    </script>
+  </body>
+</html>

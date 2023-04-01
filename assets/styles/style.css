@@ -1,0 +1,308 @@
+*{
+    /* font-family: mo; */
+}
+
+.loader_bg {
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.preloader{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.disabled {
+    cursor: default !important;
+    opacity: 0.6;
+
+}
+
+/* the answers spot */
+
+
+.empty1 {
+    position: absolute;
+    bottom: 142px;
+    left: 38px;
+    z-index: 10;
+}
+
+.empty2 {
+    position: absolute;
+    bottom: 93px;
+    left: 37px;
+    z-index: 10;
+}
+
+
+.empty3 {
+    position: absolute;
+    bottom: 93px;
+    left: 302px;
+    z-index: 10;
+}
+
+.empty4 {
+    position: absolute;
+    bottom: 93px;
+    left: 567px;
+    z-index: 10;
+}
+
+.empty5 {
+    position: absolute;
+    bottom: 142px;
+    left: 567px;
+    z-index: 10;
+}
+
+.answer-box {
+    width: 27%;
+    height: 48px;
+}
+
+
+/* the top */
+
+
+#d1 {
+    padding-left: 20px
+}
+
+.p1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: black
+}
+
+#d2 {
+    position: absolute;
+    top: -10px;
+    right: 17px;
+}
+
+.btn1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.btn2 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* backgroung*/
+
+#blue-bg {
+    width: 100%;
+    height: 25.4rem;
+    background-color: #0099cc;
+    z-index: 1
+}
+
+#lightblue-bg {
+    width: 100%;
+    height: 100px;
+    background-color: #deebf5;
+    z-index: 1
+}
+
+.reset-btn {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 21px;
+    right: -27px;
+    cursor: pointer;
+}
+
+
+#check-ans-btn {
+    width: 80px;
+    height: 60px;
+    position: relative;
+    left: 423px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#check-ans-btn:focus {
+    background: linear-gradient(#ffffff, #cccc99);
+}
+
+/*first row buttons*/
+
+.first-row {
+    position: absolute;
+    left: 5rem;
+}
+
+
+
+
+/*second row buttons*/
+
+.second-row {
+    position: absolute;
+    left: 4rem;
+    top: 4.7rem;
+}
+
+/* all buttons */
+
+
+.all {
+    border: solid 2px #0099cc;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: transparent;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #0099cc;
+    color: white
+}
+
+/*core */
+.bgimg {
+    width: 100%;
+    height: 17rem;
+    position: absolute;
+    top: 151px;
+    border-radius: 20px;
+}
+
+
+#main {
+    width: 95%;
+    height: 423px;
+    border: solid 5px #f58220;
+    border-radius: 20px;
+    z-index: 3;
+    position: absolute;
+    top: 79px;
+    left: 15px;
+    background-color: #ffffff
+}
+
+
+
+
+/*                 the two hidden msgs*/
+
+
+.container {
+    /* padding: 5px; */
+}
+
+
+.dummy-img {
+    width: 100%;
+    height: 32rem;
+}
+
+.btn3 {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    position: fixed;
+    top: 93px;
+    right: 38px;
+    cursor: pointer
+}
+
+.gmsg {
+    width: 97%;
+    height: 428px;
+    border: solid 4px #ff9933;
+    border-radius: 15px;
+    padding: 0px;
+    z-index: 10;
+    position: absolute;
+    top: 79px;
+    left: 9px;
+}
+
+.msg2 {
+    background-color: white
+}
+
+.msg1 {
+    overflow: scroll;
+}
+
+h3 {
+    margin: 20px;
+    color: black;
+}
+
+.btn4 {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    position: fixed;
+    top: 93px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.x2 {
+    color: white;
+    font-size: large;
+    font-weight: 100;
+    position: relative;
+    bottom: 8px
+}
+
+
+/*classes to be used in js*/
+
+.pointer {
+    cursor: pointer;
+}
+
+.removepointer {
+    pointer-events: none
+}
+
+.right {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-right: 32px;
+    font-family: sans-serif
+}
+
+.wrong {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-right: 32px;
+    color: black;
+    font-family: sans-serif
+}
+
+
+.while_bg {
+    z-index: 1;
+}
+
+#show-hide {
+    max-height: 600px;
+}
